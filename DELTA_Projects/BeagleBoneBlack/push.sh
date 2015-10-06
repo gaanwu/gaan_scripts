@@ -13,6 +13,8 @@ if [ 1 -eq "$contu" ]; then
 	sh switch.sh
 	cd ${DIR}/ti_sdk/
 	git push
+	cd $(DIR)/ti_sdk/board-support/linux-3.14.26-g2489c02/
+	git push
 
 	echo "------------------------------------------------------------"
 	echo " push code into Athena "
@@ -21,6 +23,9 @@ if [ 1 -eq "$contu" ]; then
 	sh switch.sh
 	cd ${DIR}/ti_sdk
 	git push
+        cd $(DIR)/ti_sdk/board-support/linux-3.14.26-g2489c02/
+        git push
+
 
 else
 	echo " do nothing"	
